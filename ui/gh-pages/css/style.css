@@ -1,7 +1,35 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
-input[type=text], input[type=password] {
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+ /* border: 3px solid green;*/
+  padding: 10px;
+}
+
+
+input[type=text], input[type=password], input[type=number],input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
