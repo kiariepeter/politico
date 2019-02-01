@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Politicol</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+	<div id="party">
+		<div style="float: right;">
+		<button onclick="btn_add_party()">Add New Party</button>
+		</div>
+		<br><br>
+   <table border="1" id="table">
+   	<thead>
+   		<th>#</th>
+   		<th>Party</th>
+   		<th>Party  Logo</th>
+   		<th>Total N0. Of Members</th>
+   		<th>Party Status</th>
+   		<th>Date Registered</th>
+   		<th>Action</th>
+   	</thead>
+   	<tbody>
+   		<tr>
+   			<th>1</th>
+   			<th>Union Party</th>
+   			<th> <img width="40px" height="" src="https://pbs.twimg.com/profile_images/2405269836/in0ey0vumf849wwv18cy_400x400.png" alt="Avatar" class="avatar"> </th>
+   			
+   			<th>280</th>
+   			<th>Active</th>
+   			<th>2019-01-31</th>
+   			<th><button style="background-color: red;">Delete</button></th>
+   		</tr>
+   	</tbody>
+   </table>
+
+	</div>
+	<div id="add_party">
+		
+<div class="row center" >
+		 <form action="" method="post">
+
+
+  <div class="container">
+    <label for="uname"><b>Party Name</b></label>
+    <input type="text" placeholder="Enter Party Name" name="uname" required>
+
+    <label for="psw"><b>Total Members</b></label>
+    <input type="number" min="0" placeholder="Enter Total Members" name="psw" required>
+
+    <label for="psw"><b>Party Logo</b></label>
+    <input type="file"  name="psw" accept="image/*" required>
+        
+    <button type="submit">Register Party</button>
+
+  </div>
+
+</form>
+	</div>
+</div>
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById('add_party').style.display = "none";
+	}
+
+	function btn_add_party(){
+		document.getElementById('add_party').style.display = "block";
+		document.getElementById('party').style.display = "none";
+	}
+</script>
+
+</body>
+</html>
