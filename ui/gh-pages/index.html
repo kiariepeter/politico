@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- <h2>Login </h2> -->
+<!--start of container-->
+<div class="row center" >
+
+
+<div id="login">
+      <form action="results/vote.html">
+  <div class="imgcontainer">
+    <img src="https://pbs.twimg.com/profile_images/2405269836/in0ey0vumf849wwv18cy_400x400.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+
+  </div>
+ <span class="psw">Forgot Password ? <a href="#" id="btn_register" onclick="btn_recover()" >recover password</a></span>&nbsp
+    <span class="psw">Not registered ? <a href="#" id="btn_register" onclick="btn_register()" >register here</a></span>
+  <div class="container" style="">
+
+ 
+
+
+  </div>
+</form>
+    
+</div>
+
+<div id="register">
+  
+      <form action="results/vote.html">
+  <div class="imgcontainer">
+    <img src="https://pbs.twimg.com/profile_images/2405269836/in0ey0vumf849wwv18cy_400x400.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="uname"><b>ID N0. </b></label>
+    <input type="text" placeholder="Enter your national id" name="uname" required>
+            <label for="uname"><b>Gender </b></label><br>
+   Male <input type="radio"  name="uname" value="Male" required>
+   Female <input type="radio"  name="uname" value="Female" required>
+
+<br><br>
+    <label for="psw"><b>Age</b></label>
+    <input type="number" min="18" max="90" placeholder="Enter Age" name="psw" required>
+
+
+        <label for="psw"><b>County</b></label>
+    <input type="text" placeholder="Enter County" name="psw" required>
+           <label for="psw"><b>Constituency</b></label>
+    <input type="text" placeholder="Enter Constituency" name="psw" required>
+
+        <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Register</button>
+
+  </div>
+    <span class="psw"> <a href="#" onclick="btn_login()">Login</a></span>
+
+</form>
+    
+</div>
+
+
+<div id="recover">
+        <form action="">
+  <div class="imgcontainer">
+    <img src="https://pbs.twimg.com/profile_images/2405269836/in0ey0vumf849wwv18cy_400x400.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input type="email" placeholder="Enter email" name="uname" required>
+
+        
+    <button type="submit">Recover password</button>
+  <span class="psw"> <a href="#" onclick="btn_login()">Login</a></span>
+  </div>
+
+
+</form>
+</div>
+
+
+
+</div><!--endof container-->
+
+<script type="text/javascript">
+  
+window.onload = function(){
+
+  document.getElementById('register').style.display ="none";
+   document.getElementById('recover').style.display ="none";
+}
+
+
+function btn_register(){
+    document.getElementById('register').style.display ="block";
+   document.getElementById('recover').style.display ="none";
+   document.getElementById('login').style.display ="none";
+}
+
+function btn_recover(){
+    document.getElementById('register').style.display ="none";
+   document.getElementById('recover').style.display ="block";
+   document.getElementById('login').style.display ="none";
+}
+
+function btn_login(){
+    document.getElementById('register').style.display ="none";
+   document.getElementById('recover').style.display ="none";
+   document.getElementById('login').style.display ="block";
+}
+
+</script>
+
+</body>
+</html>
