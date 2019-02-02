@@ -11,7 +11,7 @@ form {border: 3px solid #f1f1f1;}
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px;
 }
 
 /* Clear floats after the columns */
@@ -88,7 +88,7 @@ span.psw {
   }
 }
 
-/*designing table layout*/
+/*designiing table layout*/
 
 #table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -147,7 +147,7 @@ li a:active{
 }
 
 
-/*sidebar style*/
+/*sidebar menu style*/
 
 
 body {
