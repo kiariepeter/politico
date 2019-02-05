@@ -1,7 +1,9 @@
 from flask import Flask,request,jsonify,Response
 
 app = Flask(__name__)
-
+@app.route('/')
+def index():
+    return "Welcome to politico"
 @app.route('/add_party',methods = ['POST'])
 def add_party():
     parties = {1:'Union Party',2:'Freedom party'}
